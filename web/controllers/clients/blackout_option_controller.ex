@@ -3,7 +3,7 @@ defmodule FlatfootWeb.BlackoutOptionController do
 
   alias Flatfoot.{Clients, Clients.BlackoutOption}
 
-  action_fallback FlatfootWeb.FallbackController
+  # action_fallback FlatfootWeb.FallbackController
 
   def index(conn, %{"user_id" => user_id}) do
     user = Clients.get_user!(user_id)

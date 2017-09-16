@@ -6,7 +6,7 @@ defmodule FlatfootWeb.UserController do
   alias Flatfoot.Clients
   alias Flatfoot.Clients.User
 
-  action_fallback FlatfootWeb.FallbackController
+  # action_fallback FlatfootWeb.FallbackController
 
   def index(conn, _params) do
     users = Clients.list_users()

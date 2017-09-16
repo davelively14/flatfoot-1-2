@@ -5,7 +5,7 @@ defmodule FlatfootWeb.SessionController do
 
   import Comeonin.Bcrypt, only: [checkpw: 2, dummy_checkpw: 0]
 
-  action_fallback FlatfootWeb.FallbackController
+  # action_fallback FlatfootWeb.FallbackController
 
   def create(conn, %{"user_params" => user_params}) do
     user = Clients.get_user_by_username(user_params["username"])

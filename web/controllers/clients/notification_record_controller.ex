@@ -3,7 +3,7 @@ defmodule FlatfootWeb.NotificationRecordController do
 
   alias Flatfoot.{Clients, Clients.NotificationRecord}
 
-  action_fallback FlatfootWeb.FallbackController
+  # action_fallback FlatfootWeb.FallbackController
 
   def create(conn, %{"params" => params}) do
     params = params |> add_current_user_id(conn)
